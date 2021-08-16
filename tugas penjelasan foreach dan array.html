@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        //Foreach adalah digunakan untuk perulangan pada data yang ada di database
+
+        for(i = 1; i < 5; i++){
+        document.write("hello </br>")
+        }
+
+        //ternyata foreach juga memiliki kaitannya dengan Array, foreach digunakan untuk perulangan yang datanya dalam bentuk array, terkadang kita memiliki data yang harus kita tampilkan dengan menggunakan perulangan for, contoh foreach looping pada array
+        let mobils = ['Avanza','Xenia','Livina'];
+            console.log('foreach 1:');
+            mobils.forEach(function(mobil){
+            console.log(mobil);
+        });
+            console.log('foreach 2:');
+            mobils.forEach(function(mobil,index){
+            console.log(index,'=',mobil);
+        });
+        //foreach dengan array biasanya digunakan agar mudah saat mengolah data tersebut
+    </script>
+</body>
+</html>
